@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	<OutputPath>..\bin</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <BaseOutputPath>..\bin\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Layouts\CustomWidgetLayout.xml" />
+    <None Remove="Layouts\WidgetLayout.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Layouts\CustomWidgetLayout.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Layouts\WidgetLayout.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CameraWall\CameraWall.vcxproj" />
+  </ItemGroup>
+
+</Project>
