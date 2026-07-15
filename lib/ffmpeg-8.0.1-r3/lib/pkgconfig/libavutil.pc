@@ -1,0 +1,15 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 60.8.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: "-L${libdir}" -lavutil
+Libs.private: "-L${prefix}/lib" -lOpenCL -lcfgmgr32 -lruntimeobject -ladvapi32 -lole32 "-L${prefix}/lib" -llibssl -llibcrypto -lcrypt32 -lws2_32 -ladvapi32 -luser32 -luser32 -lbcrypt
+Cflags: "-I${includedir}"
+

@@ -1,0 +1,15 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 62.11.100
+Requires: 
+Requires.private: libswresample >= 6.1.100, libavutil >= 60.8.100
+Conflicts:
+Libs: "-L${libdir}" -lavcodec
+Libs.private: "-L${prefix}/lib" -lvpx "-L${prefix}/lib" -lvpx "-L${prefix}/lib" -lvpx "-L${prefix}/lib" -lvpx "-L${prefix}/lib" -llibwebpmux -llibwebp -llibsharpyuv -liconv -llzma "-L${prefix}/lib" -ldav1d "-L${prefix}/lib" -lsnappy "-L${prefix}/lib" -laom -lilbc "-L${prefix}/lib" -ljxl -lhwy -lbrotlienc -lbrotlidec -lbrotlicommon -ljxl_cms -llcms2 "-L${prefix}/lib" -ljxl_threads -llibmp3lame-static -llibmpghip-static "-L${prefix}/lib" -lopenjp2 "-L${prefix}/lib" -lopus "-L${prefix}/lib" -lspeex "-L${prefix}/lib" -lSvtAv1Enc -lfastfeat -ltheoraenc -ltheoradec -logg "-L${prefix}/lib" -lvorbis -logg "-L${prefix}/lib" -lvorbisenc -lvorbis -logg "-L${prefix}/lib" -lvvenc "-L${prefix}/lib" -llibwebp -llibsharpyuv "-L${prefix}/lib" -lopenh264 -lmfuuid -lole32 -lstrmiids "-L${prefix}/lib" -lshaderc -lglslang -lSPIRV-Tools-opt -lSPIRV-Tools -lshaderc_util -lole32 -luser32 "-L${prefix}/lib" -lzs
+Cflags: "-I${includedir}"
+

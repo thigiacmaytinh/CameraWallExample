@@ -1,0 +1,15 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 11.4.100
+Requires: 
+Requires.private: libswscale >= 9.1.100, libavformat >= 62.3.100, libavcodec >= 62.11.100, libswresample >= 6.1.100, libavutil >= 60.8.100
+Conflicts:
+Libs: "-L${libdir}" -lavfilter
+Libs.private: "-L${prefix}/lib" -lmysofa -lzs "-L${prefix}/lib" -lharfbuzz -lfreetype -lbz2 -llibpng16 -lzs -lbrotlidec -lbrotlicommon "-L${prefix}/lib" -lfribidi "-L${prefix}/lib" -llensfun -ltre_regex -lglib-2.0 -lintl -liconv -lws2_32 -lwinmm -lole32 -lshlwapi -luuid -ladvapi32 -lshell32 -luser32 -lpcre2-8 "-L${prefix}/lib" -ltesseract55 -llibcurl -lbcrypt -lsecur32 -liphlpapi -larchive -lxmllite -luuid -lbz2 -llz4 -lzstd -llibssl -llibcrypto -lcrypt32 -lws2_32 -ladvapi32 -luser32 -lleptonica-1.87.0 -lgif -llibpng16 -ltiff -lzs -ljpeg -llzma -llibwebpmux -llibwebp -llibsharpyuv -lopenjp2 "-L${prefix}/lib" -lass -liconv -lgdi32 -lfribidi -lharfbuzz -lfontconfig -lfreetype -lbz2 -llibpng16 -lzs -lbrotlidec -lbrotlicommon -llibexpatMT "-L${prefix}/lib" -llibzmq-mt-s-4_3_5 -ladvapi32 -liphlpapi -lrpcrt4 -lws2_32 "-L${prefix}/lib" -lshaderc -lglslang -lSPIRV-Tools-opt -lSPIRV-Tools -lshaderc_util "-L${prefix}/lib" -lOpenCL -lcfgmgr32 -lruntimeobject -ladvapi32 -lole32 "-L${prefix}/lib" -lfontconfig -lfreetype -lbz2 -llibpng16 -lzs -lbrotlidec -lbrotlicommon -llibexpatMT "-L${prefix}/lib" -lfreetype -lbz2 -llibpng16 -lzs -lbrotlidec -lbrotlicommon
+Cflags: "-I${includedir}"
+

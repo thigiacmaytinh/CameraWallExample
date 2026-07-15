@@ -1,0 +1,453 @@
+Package: ffmpeg
+Version: 8.0.1
+Port-Version: 3
+Depends: ffmpeg-bin2c, vcpkg-cmake-get-vars, vcpkg-pkgconfig-get-modules
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d4d44ecc22cb5859abdced94fdd0687abed7246eeed6074b7ed0c43e2e7a1a74
+Description: FFmpeg n8.0.1 build for MSVC (use 'static' feature for static libraries).
+Default-Features: app, base
+
+Package: ffmpeg
+Feature: all
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: All LGPL features plus Windows hardware acceleration
+
+Package: ffmpeg
+Feature: all-lgpl
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: Meta-feature: all + lgpl
+
+Package: ffmpeg
+Feature: amf
+Depends: amd-amf
+Architecture: x64-windows
+Multi-Arch: same
+Description: AMD AMF codec support
+
+Package: ffmpeg
+Feature: aom
+Depends: aom
+Architecture: x64-windows
+Multi-Arch: same
+Description: AV1 video encoding/decoding via libaom support in ffmpeg
+
+Package: ffmpeg
+Feature: app
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build all applications
+
+Package: ffmpeg
+Feature: ass
+Depends: libass
+Architecture: x64-windows
+Multi-Arch: same
+Description: Libass subtitles rendering, needed for subtitles and ass filter support in ffmpeg
+
+Package: ffmpeg
+Feature: avcodec
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the avcodec library
+
+Package: ffmpeg
+Feature: avdevice
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the avdevice library
+
+Package: ffmpeg
+Feature: avfilter
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the avfilter library
+
+Package: ffmpeg
+Feature: avformat
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the avformat library
+
+Package: ffmpeg
+Feature: base
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build all libraries
+
+Package: ffmpeg
+Feature: bluray
+Depends: libbluray
+Architecture: x64-windows
+Multi-Arch: same
+Description: Blu-ray disc support via libbluray
+
+Package: ffmpeg
+Feature: bzip2
+Depends: bzip2
+Architecture: x64-windows
+Multi-Arch: same
+Description: Bzip2 support
+
+Package: ffmpeg
+Feature: d3d11va
+Architecture: x64-windows
+Multi-Arch: same
+Description: Direct3D 11 Video Acceleration
+
+Package: ffmpeg
+Feature: d3d12va
+Architecture: x64-windows
+Multi-Arch: same
+Description: Direct3D 12 Video Acceleration
+
+Package: ffmpeg
+Feature: dav1d
+Depends: dav1d
+Architecture: x64-windows
+Multi-Arch: same
+Description: AV1 decoding via libdav1d
+
+Package: ffmpeg
+Feature: dxva2
+Architecture: x64-windows
+Multi-Arch: same
+Description: DXVA2 hardware decoding
+
+Package: ffmpeg
+Feature: ffmpeg
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the ffmpeg application
+
+Package: ffmpeg
+Feature: ffplay
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the ffplay application
+
+Package: ffmpeg
+Feature: ffprobe
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the ffprobe application
+
+Package: ffmpeg
+Feature: fontconfig
+Depends: fontconfig
+Architecture: x64-windows
+Multi-Arch: same
+Description: Useful for drawtext filter
+
+Package: ffmpeg
+Feature: freetype
+Depends: freetype
+Architecture: x64-windows
+Multi-Arch: same
+Description: Needed for drawtext filter
+
+Package: ffmpeg
+Feature: fribidi
+Depends: fribidi
+Architecture: x64-windows
+Multi-Arch: same
+Description: Improves drawtext filter
+
+Package: ffmpeg
+Feature: gme
+Depends: libgme
+Architecture: x64-windows
+Multi-Arch: same
+Description: Video game music file de/encoding via libgme
+
+Package: ffmpeg
+Feature: harfbuzz
+Depends: harfbuzz
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable drawtext filter
+
+Package: ffmpeg
+Feature: iconv
+Depends: libiconv
+Architecture: x64-windows
+Multi-Arch: same
+Description: Iconv support
+
+Package: ffmpeg
+Feature: ilbc
+Depends: libilbc
+Architecture: x64-windows
+Multi-Arch: same
+Description: iLBC de/encoding via libilbc
+
+Package: ffmpeg
+Feature: jxl
+Depends: libjxl
+Architecture: x64-windows
+Multi-Arch: same
+Description: JPEG XL de/encoding via libjxl
+
+Package: ffmpeg
+Feature: lensfun
+Depends: lensfun
+Architecture: x64-windows
+Multi-Arch: same
+Description: Lens correction via lensfun
+
+Package: ffmpeg
+Feature: lgpl
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: All LGPL-licensed optional features
+
+Package: ffmpeg
+Feature: lzma
+Depends: liblzma
+Architecture: x64-windows
+Multi-Arch: same
+Description: lzma support
+
+Package: ffmpeg
+Feature: mediafoundation
+Architecture: x64-windows
+Multi-Arch: same
+Description: Media Foundation support
+
+Package: ffmpeg
+Feature: modplug
+Depends: libmodplug
+Architecture: x64-windows
+Multi-Arch: same
+Description: ModPlug via libmodplug
+
+Package: ffmpeg
+Feature: mp3lame
+Depends: mp3lame
+Architecture: x64-windows
+Multi-Arch: same
+Description: MP3 encoding via libmp3lame
+
+Package: ffmpeg
+Feature: mysofa
+Depends: libmysofa
+Architecture: x64-windows
+Multi-Arch: same
+Description: Spatial audio via libmysofa
+
+Package: ffmpeg
+Feature: nvcodec
+Depends: ffnvcodec
+Architecture: x64-windows
+Multi-Arch: same
+Description: Nvidia video decoding/encoding acceleration
+
+Package: ffmpeg
+Feature: opencl
+Depends: opencl
+Architecture: x64-windows
+Multi-Arch: same
+Description: OpenCL processing
+
+Package: ffmpeg
+Feature: opengl
+Depends: opengl
+Architecture: x64-windows
+Multi-Arch: same
+Description: OpenGL rendering
+
+Package: ffmpeg
+Feature: openh264
+Depends: openh264
+Architecture: x64-windows
+Multi-Arch: same
+Description: H.264 de/encoding via openh264
+
+Package: ffmpeg
+Feature: openjpeg
+Depends: openjpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: JPEG 2000 de/encoding via OpenJPEG
+
+Package: ffmpeg
+Feature: openmpt
+Depends: libopenmpt
+Architecture: x64-windows
+Multi-Arch: same
+Description: Decoding tracked files via libopenmpt
+
+Package: ffmpeg
+Feature: openssl
+Depends: openssl
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use OpenSSL for TLS support
+
+Package: ffmpeg
+Feature: opus
+Depends: opus
+Architecture: x64-windows
+Multi-Arch: same
+Description: Opus de/encoding via libopus
+
+Package: ffmpeg
+Feature: sdl2
+Depends: sdl2
+Architecture: x64-windows
+Multi-Arch: same
+Description: Sdl2 support
+
+Package: ffmpeg
+Feature: shaderc
+Depends: shaderc
+Architecture: x64-windows
+Multi-Arch: same
+Description: GLSL/Vulkan shader compilation via shaderc (required by libplacebo)
+
+Package: ffmpeg
+Feature: snappy
+Depends: snappy
+Architecture: x64-windows
+Multi-Arch: same
+Description: Snappy compression, needed for hap encoding
+
+Package: ffmpeg
+Feature: soxr
+Depends: soxr
+Architecture: x64-windows
+Multi-Arch: same
+Description: Include libsoxr resampling
+
+Package: ffmpeg
+Feature: speex
+Depends: speex
+Architecture: x64-windows
+Multi-Arch: same
+Description: Speex de/encoding via libspeex
+
+Package: ffmpeg
+Feature: srt
+Depends: libsrt
+Architecture: x64-windows
+Multi-Arch: same
+Description: Haivision SRT protocol
+
+Package: ffmpeg
+Feature: ssh
+Depends: libssh
+Architecture: x64-windows
+Multi-Arch: same
+Description: SFTP protocol via libssh
+
+Package: ffmpeg
+Feature: svtav1
+Depends: svt-av1
+Architecture: x64-windows
+Multi-Arch: same
+Description: AV1 encoding via SVT-AV1
+
+Package: ffmpeg
+Feature: swresample
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the swresample library
+
+Package: ffmpeg
+Feature: swscale
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build the swscale library
+
+Package: ffmpeg
+Feature: tesseract
+Depends: tesseract
+Architecture: x64-windows
+Multi-Arch: same
+Description: Optical character recognition via tesseract
+
+Package: ffmpeg
+Feature: theora
+Depends: libtheora
+Architecture: x64-windows
+Multi-Arch: same
+Description: Theora encoding via libtheora
+
+Package: ffmpeg
+Feature: vorbis
+Depends: libvorbis
+Architecture: x64-windows
+Multi-Arch: same
+Description: Vorbis en/decoding via libvorbis, native implementation exists
+
+Package: ffmpeg
+Feature: vpx
+Depends: libvpx
+Architecture: x64-windows
+Multi-Arch: same
+Description: VP8 and VP9 de/encoding via libvpx
+
+Package: ffmpeg
+Feature: vulkan
+Depends: vulkan
+Architecture: x64-windows
+Multi-Arch: same
+Description: H.264, HEVC and AV1 de/encoding via Vulkan
+
+Package: ffmpeg
+Feature: vvenc
+Depends: vvenc
+Architecture: x64-windows
+Multi-Arch: same
+Description: VVC/H.266 encoding via vvenc
+
+Package: ffmpeg
+Feature: w32threads
+Architecture: x64-windows
+Multi-Arch: same
+Description: Windows thread support
+
+Package: ffmpeg
+Feature: webp
+Depends: libwebp
+Architecture: x64-windows
+Multi-Arch: same
+Description: WebP encoding via libwebp
+
+Package: ffmpeg
+Feature: windows-hw
+Depends: ffmpeg
+Architecture: x64-windows
+Multi-Arch: same
+Description: Windows hardware acceleration features
+
+Package: ffmpeg
+Feature: xml2
+Depends: libxml2
+Architecture: x64-windows
+Multi-Arch: same
+Description: XML parsing using the C library libxml2, needed for dash demuxing support
+
+Package: ffmpeg
+Feature: zlib
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: zlib support
+
+Package: ffmpeg
+Feature: zmq
+Depends: zeromq
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable ZeroMQ support

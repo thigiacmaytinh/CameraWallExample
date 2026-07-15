@@ -1,0 +1,15 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 62.3.100
+Requires: 
+Requires.private: libavcodec >= 62.11.100, libswresample >= 6.1.100, libavutil >= 60.8.100
+Conflicts:
+Libs: "-L${libdir}" -lavformat
+Libs.private: "-L${prefix}/lib" -llibxml2 -liconv -lbcrypt -lzs "-L${prefix}/lib" -lbz2 "-L${prefix}/lib" -lgme -lzs "-L${prefix}/lib" -lmodplug -luser32 "-L${prefix}/lib" -lopenmpt -lzs -lvorbisfile -lvorbis -logg -lmpg123 -lshlwapi "-L${prefix}/lib" -lbluray -lgdi32 -ladvapi32 -lshell32 -luser32 -lfreetype -lbz2 -llibpng16 -lbrotlidec -lbrotlicommon -ludfread -llibxml2 -liconv -lbcrypt -lzs "-L${prefix}/lib" -lzs "-L${prefix}/lib" -llibssl -llibcrypto -lcrypt32 -lws2_32 -ladvapi32 -luser32 "-L${prefix}/lib" -lsrt -lws2_32 -llibssl -llibcrypto -lcrypt32 -lws2_32 -ladvapi32 -luser32 "-L${prefix}/lib" -lssh -liphlpapi -lshell32 -llibcrypto -lcrypt32 -lws2_32 -ladvapi32 -luser32 "-L${prefix}/lib" -llibzmq-mt-s-4_3_5 -ladvapi32 -liphlpapi -lrpcrt4 -lws2_32 -lws2_32
+Cflags: "-I${includedir}"
+
